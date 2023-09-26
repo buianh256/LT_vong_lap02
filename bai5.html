@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<h1>Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</h1>
+<script>
+    let money = +prompt("Nhập số tiền ban đầu");
+    let month = +prompt("Nhập số tháng");
+    for (let i = 1; i < month ; i++) {
+        money = (money * 0.056) + money;
+    }
+    document.write(money);
+</script>
+</body>
+</html>

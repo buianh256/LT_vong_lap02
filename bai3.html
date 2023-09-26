@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    function printReact1() {
+        let h = 6;
+        let w = 6;
+        for (let i = 0; i < w; i++) {
+            for (let j = 0; j < i; j++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+    }
+    printReact1();
+    document.write('<br>');
+    function printReact() {
+        let h = 5;
+        let w = 6;
+        for (let i = h; i>0; i--) {
+            for (let j = 0; j < i; j++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+    }
+    printReact();
+    document.write('<br>');
+    function printReact2() {
+        let h = 5;
+        let w = 6;
+        for (let i = h; i>0; i--) {
+            for (let k = h; k > i ; k--) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let j = 0; j < i; j++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+    }
+    printReact2();
+    document.write('<br>');
+
+    function printReact3() {
+        let h = 6;
+        let w = 6;
+        for (let i = 0; i < w; i++) {
+            for (let k = w; k > i; k--) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let j = 0; j < i; j++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+    }
+    printReact3();
+</script>
+</body>
+</html>
+&nbsp
